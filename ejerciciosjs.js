@@ -48,3 +48,10 @@ console.log( '--------')
 array2.forEach( arr => {console.log(arr.getDetail())})
 console.log('tenes ' + array.length)
 
+const calcularLitros = (cantidadKm) => cantidadKm * 2/100;
+const litrosGastados = calcularLitros(100);
+const precioNafta = (litrosGastados, precioLitro) => '$' + precioLitro * litrosGastados;
+
+console.log(calcularLitros(200))
+console.log(precioNafta(litrosGastados, 50))
+
